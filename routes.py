@@ -16,7 +16,6 @@ POSTGRES = {
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\
 %(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
 
-
 db.init_app(app)
 
 app.secret_key = "development-key"
@@ -76,10 +75,7 @@ def signup():
     elif request.method == 'GET':
         return render_template('signup.html', form = form )
 
-@app.route("/home")
-def home():
-    return render_template('home.html')
-
+#User login form (possibly a hidden page for admin access)
 @app.route("/login", methods=["GET", "POST"])
 def login():
     form = LoginForm()
@@ -101,6 +97,7 @@ def login():
     elif request.method == "GET":
         return render_template('login.html', form=form)
 
+#logout page for admin
 @app.route("/logout")
 def logout():
     session.pop('email', None)
