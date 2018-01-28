@@ -22,3 +22,20 @@ class User(db.Model):
 
   def check_password(self, password):
     return check_password_hash(self.pwdhash, password)
+
+#Model for the Patient information
+class Patient(db.Model):
+    __tablename__ = 'patients'
+    uid = db.Column(db.Integer, primary_key = True)
+    firstname = db.Column(db.String(30))
+    lastname = db.Column(db.String(30))
+    age = db.Column(db.Integer)
+    s_pulse = db.Column(db.Integer)
+    e_pulse = db.Column(db.Integer)
+
+    def __init__(self, firstname, lastname, age, s_pulse, e_pulse):
+      self.firstname = firstname.title()
+      self.lastname = lastname.title()
+      self.age = age
+      self.s_pulse = s_pulse
+      self.e_pulse = e_pulse

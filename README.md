@@ -19,11 +19,16 @@ admin access:
   directly input to database or edit current fields
 
 TO DO:
-New DB User
-Create DB
-Connect to DB
+New DB User DONE
+Create DB DONE
+Connect to DB DONE
 ReWrite CSS
 Connect to DB on different computer
+Remove unnecessary entries from form
+---EXPO functionality complete--
 Determine how to connect remotely (what is postgres host, why local host?)
+Add feedback to patient entry form: "patient entered successfully"
+Determine Health Status
+Search entries
 
-Dependencies: Flask Flask-SQLAlchemy FLask_WTF
+Dependencies: Flask Flask-SQLAlchemy FLask_WTF psycopg2

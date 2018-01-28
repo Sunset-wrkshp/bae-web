@@ -1,16 +1,17 @@
 from flask import Flask, render_template, request, url_for, session, redirect
 import os
-from models import db, User
+from models import db, User, Patient
 from forms import SignupForm, LoginForm, PatientForm
 
 app = Flask(__name__)
 
 POSTGRES = {
-    'user': 'postgres',
-    'pw': 'password',
-    'db': 'learningflask',
+    'user': 'MECH_User',
+    'pw': 'MECHMeeting',
+    'db': 'B_Patients',
     'host': 'localhost',
     'port': '5432',
+    #note: users must be given the correct privilages to edit database tables n such
 }
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\
@@ -36,6 +37,7 @@ def dated_url_for(endpoint, **values):
     return url_for(endpoint, **values)
 #end URL CSS problem
 
+#Patient entry data form
 @app.route("/", methods = ['POST', 'GET'])
 def DataForm():
     form = PatientForm()
@@ -44,7 +46,15 @@ def DataForm():
         if form.validate() == False:
             return render_template('DataForm.html', form=form)
         else:
-            return "Successful"
+            #Commented out until new database is made for this project.
+            newpatient = Patient(form.first_name.data, form.last_name.data, form.age.data, form.s_pulse.data, form.e_pulse.data)
+            db.session.add(newpatient)
+            db.session.commit()
+            #possible to do a "Patient submitted confirmation?" with name of last person
+            #return render_template('DataForm.html', form=form)
+            return redirect(url_for('DataForm'))
+            #OK so this returns a blank page (good) while render_template returns the form with information still in it.
+            #will it allow me to do the patient submitted confirmation?
 
     elif request.method == 'GET':
         return render_template('DataForm.html', form = form )
