@@ -1,5 +1,3 @@
-Cloned from unfinished learning flask project
-
 Web (framework?) for BaeMax
 
 Purpose: Webpage allows user to input patient information as a backup to the audio input.
@@ -21,9 +19,10 @@ admin access:
   directly input to database or edit current fields
 
 TO DO:
-Why is the form now not centered? What did I mess up?
-Maybe start the CSS over?
-Connect a database
-Change Database password
-Write Python to connect to DB from other computer.
-sleep
+New DB User
+Create DB
+Connect to DB
+ReWrite CSS
+Connect to DB on different computer
+
+Dependencies: Flask Flask-SQLAlchemy FLask_WTF
