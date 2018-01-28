@@ -24,5 +24,6 @@ Create DB
 Connect to DB
 ReWrite CSS
 Connect to DB on different computer
+Determine how to connect remotely (what is postgres host, why local host?)
 
 Dependencies: Flask Flask-SQLAlchemy FLask_WTF
