@@ -26,9 +26,9 @@
 - [x] New DB User
 - [x] Create DB
 - [x] Connect to DB
-- [ ] ReWrite CSS
+- [ ] Use Bootstrap for HTML
 - [ ] Connect to DB on different computer
-- [ ] Remove unnecessary entries from form
+- [x] Remove unnecessary entries from form
 ---EXPO functionality complete--
 - [ ] Determine how to connect remotely (what is postgres host, why local host?)
 - [ ] Add feedback to patient entry form: "patient entered successfully"
