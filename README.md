@@ -1,31 +1,31 @@
 
 ## Web (framework?) for BaeMax
 
-####Purpose
+#### Purpose
 
   * Webpage allows user to input patient information as a backup to the audio input.
   * Webpage allows an admin to access collected data from the database
   * Webpage allows an admin to search collected data from the database
   * Webpage allows an admin to edit collected data from the database
 
-####Should include
+#### Should include
 
-  * main page  
-      enter information
+  * **main page**  
+      * enter information
 
-  * /home or /about
-     info about the project/home screen
+  * **/home or /about**
+     * info about the project/home screen
 
-  * admin access:
+  * **admin access:**
       * Provides admin information from database
       * number of patients
       * search for patients
       * directly input to database or edit current fields
 
-####TO DO:  
-- [ ] New DB User DONE
-- [ ] Create DB DONE
-- [ ] Connect to DB DONE
+#### TO DO:  
+- [x] New DB User
+- [x] Create DB
+- [x] Connect to DB
 - [ ] ReWrite CSS
 - [ ] Connect to DB on different computer
 - [ ] Remove unnecessary entries from form
@@ -35,5 +35,8 @@
 - [ ] Determine Health Status
 - [ ] Search entries
 
-####Dependencies  
-Flask Flask-SQLAlchemy FLask_WTF psycopg2
+#### Dependencies  
+Flask  
+Flask-SQLAlchemy  
+FLask_WTF  
+psycopg2
