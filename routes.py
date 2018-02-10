@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, url_for, session, redirect
 import os
 from models import db, User, Patient
 from forms import SignupForm, LoginForm, PatientForm
-from flask.ext.heroku import Heroku
+from flask_heroku import Heroku
 
 app = Flask(__name__)
 heroku = Heroku(app)
@@ -43,7 +43,7 @@ def dated_url_for(endpoint, **values):
 @app.route("/", methods = ['POST', 'GET'])
 def DataForm():
     form = PatientForm()
-
+    db.create_all()
     if request.method == 'POST':
         if form.validate() == False:
             return render_template('DataForm2.html', form=form)
