@@ -34,7 +34,7 @@
     ---EXPO functionality complete--
 - [ ] Determine how to connect remotely (what is postgres host, why local host?)
 - [ ] Add feedback to patient entry form: "patient entered successfully"
-- [ ] Determine Health Status
+- [ ] **Determine Health Status**
 - [ ] Search entries
 - [ ] Output page updates automatically
 - [ ] Output page has interactive graph.
