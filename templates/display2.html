@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Display Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body class = "bg-light">
+    <div class="container-fluid bg-info">
+      <div class = "container">
+        <div class = "row">
+            <div class = "col-6 bg-light">{#Left Column#}
+                <div class = "row">
+                  <div class = "col">
+                    <p>{#Left Column Top#}</p> <p>{{latest.firstname}}</p>
+                  </div>
+                </div>
+                <div class = "row">
+                  <div class = "col">
+                      <p> {#Left Column Bottom#} </p>
+                      {#Testing comments. Can use Google tool to get width of thing. Can use regular HTML5 for other editing.#}
+                      {#Style still works, so a regular .css file can change other things I need. Style to change image size manually. How about auto fitting the container?#}
+                      {#ok nvm I just needed img-fluid#}
+                      <img src="https://www.clker.com/cliparts/L/C/Q/c/G/1/head-of-person.svg" class = "rounded img-fluid" alt="Image meant to load but hey">
+                  </div>
+                </div>
+            </div>
+            <div class = "col-6 bg-light">{#Second column#}
+                <p>{{latest.lastname}}, {{latest.firstname}} </p>
+                <p>Age: {{latest.age}}</p>
+                <p>Health Status would go here.</p>
+            </div>
+        </div>
+      </div>
+    <div>
+</body>

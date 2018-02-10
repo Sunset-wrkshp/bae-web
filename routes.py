@@ -119,7 +119,7 @@ def logout():
 def display():
     search =  Patient.query
     latest = search.get(search.count())
-    return render_template("display.html", latest = latest, search = search)
+    return render_template("display2.html", latest = latest, search = search)
 
 if __name__ == "__main__":
     app.run(debug=True)
