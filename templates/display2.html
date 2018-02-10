@@ -10,8 +10,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
-<body class = "bg-light">
-    <div class="container-fluid bg-info">
+<body class = "bg-info">
+  {#Navbar for Title and links#}
+  <nav class = "navbar navbar-expand-md bg-secondary navbar-dark">
+    <a class="navbar-brand" href="{{ url_for('DataForm')}}">BAEMAX</a>
+  </nav>
+    {#<div class="container-fluid bg-info">#}
       <div class = "container">
         <div class = "row">
             <div class = "col-6 bg-light">{#Left Column#}
@@ -37,5 +41,5 @@
             </div>
         </div>
       </div>
-    <div>
+    {#<div>#}
 </body>

@@ -30,7 +30,7 @@
 - [ ] Connect to DB on different computer
 - [x] Remove unnecessary entries from form  
 - [ ] **Display Page:**
-    * Text, Person's name, Their information. Top patient. Refresh on each new member. Image on the left, info on the right.  
+      * Text, Person's name, Their information. Top patient. Refresh on each new member. Image on the left, info on the right.  
     ---EXPO functionality complete--
 - [ ] Determine how to connect remotely (what is postgres host, why local host?)
 - [ ] Add feedback to patient entry form: "patient entered successfully"
@@ -49,9 +49,18 @@ psycopg2
 * [x] Get the query running.  
 * [x] Set up the display page to display information  
 * [ ] Get Bootstrap CSS working for home  
+      * [ ] Get basic functionality
+      * [ ] Get font formatted (center and looking nice)
 * [ ] Get bootstrap CSS working for display page.  
+      * [x] Get basic functionality
+      * [ ] Get font formatted (center and looking nice)
+      * [ ] Get good image
+      * [ ] Change colors
+      * [x] NavBar setup
+            * [x] Link the home page when BAEMAX is clicked
 * [ ] Upload to that website making website  
 
 **if possible**
 * [ ] look into auto updates
 * [ ] Python to connect to postgres
+* [ ] Link other pages to NavBar
