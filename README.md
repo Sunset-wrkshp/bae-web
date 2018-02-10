@@ -49,7 +49,7 @@ psycopg2
 * [x] Get the query running.  
 * [x] Set up the display page to display information  
 * [ ] Get Bootstrap CSS working for home  
-      * [ ] Get basic functionality
+      * [x] Get basic functionality
       * [ ] Get font formatted (center and looking nice)
 * [ ] Get bootstrap CSS working for display page.  
       * [x] Get basic functionality

@@ -10,3 +10,14 @@ body {
 .normal-text {
 
 }
+
+/*Changes the way the inpu boxes look. Why? I dont know man. It just works. I'm not questioning it.*/
+.form-group input {
+  border: none;
+  border-bottom: 2px solid #4285f4;
+  background-color: transparent;
+  color: #3a3a3a;
+  font-size: 18px;
+  padding: 5px 0;
+  width: 100%;
+}

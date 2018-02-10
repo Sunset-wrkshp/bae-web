@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Display Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main2.css') }}" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body class = "bg-info">
+  {#Navbar for Title and links#}
+  <nav class = "navbar navbar-expand-md bg-secondary navbar-dark">
+    <a class="navbar-brand" href="{{ url_for('DataForm')}}">BAEMAX</a>
+  </nav>
+  <div class = "container bg-light">
+    <form method="POST" action= "/">
+      {{ form.hidden_tag() }}
+      <div class = "row">
+        <div class = "col-6 col-md-12">
+          <div class = "form-group">
+          {#Top/Left Form part#}
+          {{ form.first_name.label }}
+
+          {% if form.first_name.errors %}
+            {% for error in form.first_name.errors %}
+            <p class="text-danger">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.first_name }}
+          </div>
+          <div class="form-group">
+            {{ form.last_name.label }}
+
+            {% if form.last_name.errors %}
+              {% for error in form.last_name.errors %}
+              <p class="text-danger">{{ error }}</p>
+              {% endfor %}
+            {% endif %}
+
+            {{ form.last_name }}
+          </div>
+
+          <div class="form-group">
+            {{ form.age.label }}
+
+            {% if form.age.errors %}
+              {% for error in form.age.errors %}
+              <p class="text-danger">{{ error }}</p>
+              {% endfor %}
+            {% endif %}
+
+            {{ form.age }}
+          </div>
+        </div>
+        <div class = "col-6 col-md-12">
+          {#Bottom/Left Form Part#}
+          <div class="form-group">
+            {{ form.s_pulse.label }}
+            {{ form.s_pulse.description }}
+
+            {% if form.s_pulse.errors %}
+              {% for error in form.s_pulse.errors %}
+              <p class="text-danger">{{ error }}</p>
+              {% endfor %}
+            {% endif %}
+
+            {{ form.s_pulse }}
+          </div>
+
+          <div class="form-group">
+            {{ form.e_pulse.label }}
+            {{ form.e_pulse.description }}
+
+            {% if form.e_pulse.errors %}
+              {% for error in form.e_pulse.errors %}
+              <p class="text-danger">{{ error }}</p>
+              {% endfor %}
+            {% endif %}
+
+            {{ form.e_pulse }}
+          </div>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-12">
+          {{ form.submit(class=" btn btn-primary") }}
+        </div>
+      </div>
+    </form>
+  </div>
+</body>

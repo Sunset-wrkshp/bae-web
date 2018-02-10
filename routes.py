@@ -44,7 +44,7 @@ def DataForm():
 
     if request.method == 'POST':
         if form.validate() == False:
-            return render_template('DataForm.html', form=form)
+            return render_template('DataForm2.html', form=form)
         else:
             #Commented out until new database is made for this project.
             newpatient = Patient(form.first_name.data, form.last_name.data, form.age.data, form.s_pulse.data, form.e_pulse.data)
@@ -57,7 +57,7 @@ def DataForm():
             #will it allow me to do the patient submitted confirmation?
 
     elif request.method == 'GET':
-        return render_template('DataForm.html', form = form )
+        return render_template('DataForm2.html', form = form )
 
 
 @app.route("/about")
