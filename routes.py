@@ -113,5 +113,21 @@ def logout():
     session.pop('email', None)
     return redirect(url_for('index'))
 
+#Output page
+#So get first patient from the database.
+#how to get that information to the page to use? I think just like how form works. What is user, like what type?
+#for multiple things, returns a list.
+@app.route("/display")
+def display():
+    print("This is stupid, lol")
+    work =  Patient.query
+    name = Patient.query.order_by(Patient.age).all()
+    name2 = Patient.query.filter_by(firstname='Red').all()
+    for i in range(len(name2)):
+
+        print(name2[i].firstname)
+
+    return render_template("display.html", work = work, name=name)
+
 if __name__ == "__main__":
     app.run(debug=True)

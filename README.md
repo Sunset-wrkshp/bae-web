@@ -28,12 +28,16 @@
 - [x] Connect to DB
 - [ ] Use Bootstrap for HTML
 - [ ] Connect to DB on different computer
-- [x] Remove unnecessary entries from form
----EXPO functionality complete--
+- [x] Remove unnecessary entries from form  
+- [ ] **Display Page:**
+    * Text, Person's name, Their information. Top patient. Refresh on each new member. Image on the left, info on the right.
+    ---EXPO functionality complete--
 - [ ] Determine how to connect remotely (what is postgres host, why local host?)
 - [ ] Add feedback to patient entry form: "patient entered successfully"
 - [ ] Determine Health Status
 - [ ] Search entries
+- [ ] Output page updates automatically
+- [ ] Output page has interactive graph.
 
 #### Dependencies  
 Flask  
