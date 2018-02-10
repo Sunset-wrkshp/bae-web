@@ -46,12 +46,12 @@ FLask_WTF
 psycopg2
 
 ### What am I doing today
-* Get the query running.  
-* Set up the display page to display information  
-* Get Bootstrap CSS working for home  
-* Get bootstrap CSS working for display page.  
-* Upload to that website making website  
+* [x] Get the query running.  
+* [x] Set up the display page to display information  
+* [ ] Get Bootstrap CSS working for home  
+* [ ] Get bootstrap CSS working for display page.  
+* [ ] Upload to that website making website  
 
 **if possible**
-* look into auto updates
-* Python to connect to postgres
+* [ ] look into auto updates
+* [ ] Python to connect to postgres
