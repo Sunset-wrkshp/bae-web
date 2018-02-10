@@ -2,8 +2,10 @@ from flask import Flask, render_template, request, url_for, session, redirect
 import os
 from models import db, User, Patient
 from forms import SignupForm, LoginForm, PatientForm
+from flask.ext.heroku import Heroku
 
 app = Flask(__name__)
+heroku = Heroku(app)
 
 POSTGRES = {
     'user': 'MECH_User',

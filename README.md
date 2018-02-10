@@ -49,15 +49,15 @@ psycopg2
 * [x] Get the query running.  
 * [x] Set up the display page to display information  
 * [ ] Get Bootstrap CSS working for home  
-      * [x] Get basic functionality
-      * [ ] Get font formatted (center and looking nice)
+    * [x] Get basic functionality
+    * [ ] Get font formatted (center and looking nice)
 * [ ] Get bootstrap CSS working for display page.  
-      * [x] Get basic functionality
-      * [ ] Get font formatted (center and looking nice)
-      * [ ] Get good image
-      * [ ] Change colors
-      * [x] NavBar setup
-            * [x] Link the home page when BAEMAX is clicked
+     * [x] Get basic functionality
+     * [ ] Get font formatted (center and looking nice)
+     * [ ] Get good image
+     * [ ] Change colors
+     * [x] NavBar setup
+          * [x] Link the home page when BAEMAX is clicked
 * [ ] Upload to that website making website  
 
 **if possible**

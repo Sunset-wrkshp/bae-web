@@ -60,7 +60,7 @@
           {#Bottom/Left Form Part#}
           <div class="form-group">
             {{ form.s_pulse.label }}
-            {{ form.s_pulse.description }}
+            <p>{{ form.s_pulse.description }}</p>
 
             {% if form.s_pulse.errors %}
               {% for error in form.s_pulse.errors %}
@@ -73,7 +73,7 @@
 
           <div class="form-group">
             {{ form.e_pulse.label }}
-            {{ form.e_pulse.description }}
+            <p>{{ form.e_pulse.description }}</p>
 
             {% if form.e_pulse.errors %}
               {% for error in form.e_pulse.errors %}
