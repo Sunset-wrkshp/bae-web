@@ -18,7 +18,7 @@ POSTGRES = {
 
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\
 #%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/B_Patients'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://dyovhyczxffaic:36642e0405b1c01ee67c1e5af10435262535198dfd083f562d20ee3f5e9c40d3@ec2-54-225-255-132.compute-1.amazonaws.com:5432/d1kir75j338r7h'
 
 db.init_app(app)
 
