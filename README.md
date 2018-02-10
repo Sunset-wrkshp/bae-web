@@ -30,7 +30,7 @@
 - [ ] Connect to DB on different computer
 - [x] Remove unnecessary entries from form  
 - [ ] **Display Page:**
-    * Text, Person's name, Their information. Top patient. Refresh on each new member. Image on the left, info on the right.
+    * Text, Person's name, Their information. Top patient. Refresh on each new member. Image on the left, info on the right.  
     ---EXPO functionality complete--
 - [ ] Determine how to connect remotely (what is postgres host, why local host?)
 - [ ] Add feedback to patient entry form: "patient entered successfully"
@@ -44,3 +44,14 @@ Flask
 Flask-SQLAlchemy  
 FLask_WTF  
 psycopg2
+
+### What am I doing today
+* Get the query running.  
+* Set up the display page to display information  
+* Get Bootstrap CSS working for home  
+* Get bootstrap CSS working for display page.  
+* Upload to that website making website  
+
+**if possible**
+* look into auto updates
+* Python to connect to postgres

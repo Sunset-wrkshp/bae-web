@@ -119,7 +119,7 @@ def logout():
 #for multiple things, returns a list.
 @app.route("/display")
 def display():
-    print("This is stupid, lol")
+    #print("This is stupid, lol")
     work =  Patient.query
     name = Patient.query.order_by(Patient.age).all()
     name2 = Patient.query.filter_by(firstname='Red').all()
