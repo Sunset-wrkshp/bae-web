@@ -19,6 +19,7 @@ POSTGRES = {
 #For local DB
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
 #For Heroku DB (note this needs to be changed because this will update)
+#How update if local? I dont know and I don't care.
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 
 
